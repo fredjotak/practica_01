@@ -106,50 +106,46 @@
     width: 100%;
 }
 /* ****** inicio contenedor campo ******** */
-.form-grupo{
-    position: relative;
-    /*color: #666;*/
+.formulario-campos{
+    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-row-gap: 10px;
 }
-.form-grupo + .form-grupo {
-    margin-top: 30px;
+.formulario-campos > br {
+    display: none;
 }
-.form-grupo label {
-    position: absolute;
-    left: 0;
-    top: 15px;
-    color: #bbb;
-    transition: .3s;
-    z-index: 1;
+.formulario-campos > label {
+    font-weight: bold;
 }
-.form-grupo input{
-    position: relative;
-    width: 100%;
-    height: 35px;
-    padding: 20px 0 0 0;
-    background: none;
+.formulario-campos > input , .formulario-campos > textarea{
+    background-color: transparent;
     border: none;
-    transition: .3s;
     border-bottom: solid #777 1px;
     color: var(--color-blanco);
-    z-index: 3;
-    font-size: var(--tamanio-texto);
-}
-.form-grupo input:invalid{
     outline: none;
+    font-family: inherit;
 }
-.form-grupo input:focus, .form-grupo > input:valid, .form-grupo textarea:focus, .form-grupo > textarea:valid{
-    outline: none;
-    box-shadow: 0 1px var(--color-azul-oscuro);
-    border-color: var(--color-azul-oscuro);
-    /*transform:translateY(15px)*/;
+.formulario-campos > input:focus , .formulario-campos > textarea:focus{
+    border-color: var(--color-blanco);
 }
-.form-grupo input:focus + label , .form-grupo input:valid + label, .form-grupo textarea:focus + label, .form-grupo textarea:valid + label{
-    font-size: 14px;
+.formulario-campos > select {
+    border-radius: 5px;
+    background: transparent;
     color: var(--color-blanco);
-    font-weight: bold;
-    transform: translateY(-28px);
+    outline: none;
+    padding: 2px;
 }
-/* para el submit  */
+.formulario-campos > select:hover {
+    border-color: var(--color-blanco);
+}
+
+.formulario-campos > select > option {
+    background-color: var(--color-oscuro);
+    color: var(--color-blanco);
+}
+.formulario-campos-radio {
+    font-size: .8rem;
+}
 .boton{
     display: block;
     width: 150px;
@@ -171,36 +167,37 @@
 .boton:focus{
     outline: none;
 }
-
-.form-grupo > textarea {
-    width: 100%;
-    height: 60px;
-    background: transparent;
-    border-width: 0;
-    border-bottom: solid #777 1px;
-    outline-color: var(--color-oscuro);
-    padding: 5px;
-    color: var(--color-blanco);
-    font-family: inherit;
-    font-size: inherit;
-}
-.form-grupo > select {
-    border-radius: 5px;
-    background: transparent;
-    color: var(--color-blanco);
-    outline: none;
-    padding: 2px;
-}
-.form-grupo > select:hover {
-    border-color: var(--color-blanco);
-}
-.form-grupo > select + label {
-    margin-top: -40px;
-    font-weight: bold;
-    color: var(--color-blanco);
-}
 /* ******* fin contenedor campo ********** */
 
+.contenedor-lista {
+    display: grid;
+    position: relative;
+    grid-template-columns: 90%;
+    grid-row-gap: 15px;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+/*.contenedor-lista >*/ .contenedor-lista-img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    background-color: var(--color-blanco);
+    border-radius: 50%;
+}
+/*.contenedor-lista >*/ .contenedor-lista-img > img {
+    width: 100%;
+}
+.lista-detalle {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px var(--color-blanco);
+}
+.centro {
+    text-align: center;
+}
 @media screen and (min-width: 768px){ 
     .contenedor {
         grid-template-columns: 43% 43%;
@@ -244,10 +241,11 @@
 
     .formulario {
         padding-top: 50px;
-        width: 450px;
+        width: 500px;
     }
 
-    .form-grupo label {
-        top: 10px;
+    .contenedor-lista{
+        grid-template-columns: 45% 45%;
     }
+
 }

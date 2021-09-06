@@ -14,33 +14,34 @@
                 <h1 class="formulario-titulo">Hola mundo</h1>
                 <div class="formulario-logo"><img src="recursos/imagenes/aprender-en-linea.png" alt=""></div>
                 <form action="" class="formulario fondo-naranja">
-                    <div class="form-grupo">
-                        <input type="text" required>
+                    <div class="formulario-campos">
                         <label for="">Nombre:</label>
-                    </div>
-                    <div class="form-grupo">
-                        <input type="password" required>
+                        <input type="text" required>
+                        <br>
                         <label for="">Password:</label>
-                    </div>
-                    <div class="form-grupo">
-                        <input type="number" required>
+                        <input type="password" required>
+                        <br>
                         <label for="">Precio:</label>
-                    </div>
-                    <div class="form-grupo">
-                        <input type="email" required>
+                        <input type="number" required>
+                        <br>
                         <label for="">Correo:</label>
-                    </div>
-                    <div class="form-grupo">
-                        <textarea name="" id="" required></textarea>
+                        <input type="email" required>
+                        <br>
                         <label for="">Texto:</label>
-                    </div>
-                    <div class="form-grupo">
+                        <textarea name="" id="" rows="5" required></textarea>
+                        <br>
+                        <label for="">Medio:</label>
+                        <div class="formulario-campos-radio">
+                            <input type="radio" name="as" id=""> Hola <br>
+                            <input type="radio" name="as" id=""> Nada
+                        </div>
+                        <br>
+                        <label for="">Seleccion:</label>
                         <select name="" id="">
                             <option value="">Primero</option>
                             <option value="">Segundo</option>
                             <option value="">Tercero</option>
                         </select>
-                        <label for="">Seleccion:</label>
                     </div>
                     
                         <input class="boton" type="submit" value="Reg">

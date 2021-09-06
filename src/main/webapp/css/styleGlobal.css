@@ -1,13 +1,13 @@
 :root {
     --color-oscuro: #282c31;
     --color-amarillo: #f0c50d;
-    --color-azul: #179cdc; /*#425df8;*/
+    --color-azul: #179cdc;
     --color-celeste: #3dc5d9;
     --color-naranja: #f35c2b;
     --fondo-rojo: #ee242d;
     --color-blanco: #ddd;
     --color-negro: #111;
-    --color-enlace: rgb(161, 160, 142); /*rgb(252, 215, 5);*/
+    --color-enlace: var(--color-amarillo);
 
     --tamanio-texto: 16px;
 }
@@ -35,7 +35,7 @@ a {
 
 footer {
     display: flex;
-    height: 100px;
+    height: 15vh;
     padding: 25px;
     background-color: var(--color-negro);
     justify-content: center;
@@ -60,6 +60,7 @@ h5 {
 section {
     overflow-x: hidden;
     padding: 20px 2%;
+    min-height: 80vh;
 }
 p {
     margin-bottom: 10px;
