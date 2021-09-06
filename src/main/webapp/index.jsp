@@ -1,4 +1,4 @@
-<!--<%@page contentType="text/html" pageEncoding="UTF-8"%>-->
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -20,7 +20,7 @@
                     </div>
                     <h3>Inscripción en Curso</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, repellat.</p>
-                    <a href="formulario.html">registrar</a>
+                    <a href="inscripcion_curso.jsp">registrar</a>
                 </div>
                 <div class="cont-menu fondo-naranja">
                     <div class="cont-menu-img">
@@ -28,7 +28,7 @@
                     </div>
                     <h3>Registro de Usuarios</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, assumenda.</p>
-                    <a href="vista.html">registrar</a>
+                    <a href="registro_usuario.jsp">registrar</a>
                 </div>
                 <div class="cont-menu fondo-azul">
                     <div class="cont-menu-img">
