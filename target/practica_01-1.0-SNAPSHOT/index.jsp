@@ -36,7 +36,7 @@
                     </div>
                     <h3>Registro de Productos</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, saepe?</p>
-                    <a href="">registrar</a>
+                    <a href="registro_producto.jsp">registrar</a>
                 </div>
                 <div class="cont-menu fondo-celeste">
                     <div class="cont-menu-img">
@@ -44,7 +44,7 @@
                     </div>
                     <h3>Registro de Libros</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, explicabo?</p>
-                    <a href="">registrar</a>
+                    <a href="registro_libro.jsp">registrar</a>
                 </div>
             </div>
         </section>

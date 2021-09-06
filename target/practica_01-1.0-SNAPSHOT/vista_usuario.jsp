@@ -11,7 +11,7 @@
     <body>
         <section>
             <jsp:useBean id="usuario" scope="request" class="com.emergentes.usuario.Usuario" />
-            <h1 class="centro">Datos del Usuario</h1>
+            <h1 class="centro ancho__90">Datos del Usuario</h1>
             <div class="contenedor-lista-img"><img src="recursos/imagenes/aprender-en-linea.png"></div>
             <div class="contenedor-lista">
                 <div class="lista-detalle fondo-naranja">

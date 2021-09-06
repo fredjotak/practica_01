@@ -1,3 +1,4 @@
+.ancho__90 { width: 90%; }
 .contenedor {
     display: grid;
     grid-template-columns: 90%;
